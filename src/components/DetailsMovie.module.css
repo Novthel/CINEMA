@@ -1,0 +1,25 @@
+
+.movDetails{
+    margin: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+h3{
+    font-size: 1.5rem;
+    color: white;
+}
+
+.imgDetails{
+    width: 350px;
+    height: auto;
+    border-radius: 20px;
+}
+
+.details{
+    width: 350px;
+    height: auto;
+}
