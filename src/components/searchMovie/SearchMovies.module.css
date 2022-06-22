@@ -1,0 +1,25 @@
+.container{
+    display: flex;
+    padding: 10px;
+}
+
+.search{
+    position: relative;
+}
+
+
+.searchInput{
+    padding: 5px;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    
+}
+
+.searchButton{
+    position: absolute;
+    height: 100%;
+    background: none;
+    right: 0;
+    border: none;
+}

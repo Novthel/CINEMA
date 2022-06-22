@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
-import styles from '../components/DetailsMovie.module.css';
-import { get } from '../utils/Api';
+import styles from '../components/details/DetailsMovie.module.css'
+import { get } from '../utils/Api'
+import { getImageURL } from '../utils/GetImageURL'
+
 
 export default function DetailsMovie() {
 
@@ -14,13 +16,13 @@ export default function DetailsMovie() {
     get(searchURL).then(data =>{
       setMovie(data)
     })
-  })
+  },[id])
 
   if (!movie) {
     return null
   }
 
-   const imagenURL = 'https://image.tmdb.org/t/p/w500' + movie.poster_path;
+   const imagenURL = getImageURL( movie.poster_path, 500);;
 
   return (
     <div className={ styles.movDetails }>
