@@ -8,12 +8,14 @@ export default function Home() {
 
   const [query] = useSearchParams()
   const search = query.get('search')
+  const vote_average = query.get('vote_average.lte')
+  const vote_averageMin = query.get('vote_average.gte')
 
   return (
     <div>
         <HeaderMovies />
         <Filter />
-        <Discover search={ search }/>
+        <Discover search={ search } vote_average ={vote_average}  vote_averageMin ={vote_averageMin}  />
     </div>
   )
 }
