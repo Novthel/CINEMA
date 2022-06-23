@@ -2,6 +2,7 @@ import React from 'react'
 import HeaderMovies from '../components/headerMovie/HeaderMovies'
 import Discover from '../components/discover/Discover'
 import { useSearchParams } from "react-router-dom";
+import Filter from '../components/filter/Filter';
 
 export default function Home() {
 
@@ -11,6 +12,7 @@ export default function Home() {
   return (
     <div>
         <HeaderMovies />
+        <Filter />
         <Discover search={ search }/>
     </div>
   )

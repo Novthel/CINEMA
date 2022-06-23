@@ -1,0 +1,17 @@
+.radio{
+    width: 150px;
+    border-radius: 5px;
+    border: 1px solid rgb(170, 168, 168);
+    padding: 2px;
+    background-color: rgb(253, 252, 245);
+
+}
+
+.inputRating{
+    display: none;
+}
+
+.star{
+    cursor: pointer;
+    margin-right: 10px;
+}
