@@ -1,7 +1,7 @@
-import React from 'react';
-import styles from './HeaderMovies.module.css';
-import cinema from '../../cinema.jpg';
-import SearchMovies from '../searchMovie/SearchMovies';
+import React from 'react'
+import styles from './HeaderMovies.module.css'
+import cinema from '../../media/cinema.jpg'
+import SearchMovies from '../searchMovie/SearchMovies'
 
 
 export default function HeaderMovies() {

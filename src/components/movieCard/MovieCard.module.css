@@ -1,10 +1,29 @@
 .card{
     text-align: center;
     margin-bottom: 40px;
+    position: relative;
+   
 }
 
 .imgCard{
     border-radius: 10px;
-    height: auto;
+    width: 100%;
+    height: hidden;
+}
+
+.vote_average{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+    padding-left: 20px;
+    border-top-left-radius: 40px;
+    
+}
+
+.vote_average p{
+    color: white;
+    font-size: 0.9rem;
+    padding: 0 10px ;
 }
 

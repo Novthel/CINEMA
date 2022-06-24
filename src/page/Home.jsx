@@ -15,7 +15,7 @@ export default function Home() {
     <div>
         <HeaderMovies />
         <Filter />
-        <Discover search={ search } vote_average ={vote_average}  vote_averageMin ={vote_averageMin}  />
+        <Discover key={vote_average} search={ search } vote_average ={vote_average}  vote_averageMin ={vote_averageMin}  />
     </div>
   )
 }

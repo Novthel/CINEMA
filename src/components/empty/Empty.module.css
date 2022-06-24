@@ -1,0 +1,11 @@
+.empty{
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+    gap: 20px;
+    
+}
+
+.empty p{
+    font-size: 2rem;
+}
