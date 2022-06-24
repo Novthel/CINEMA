@@ -6,6 +6,14 @@ import Empty from '../empty/Empty'
 import InfiniteScroll from 'react-infinite-scroll-component'
 import Spinner from '../spinner/Spinner'
 
+/**
+ * Shows the complete list of movies obtained in the api query, uses the scrollinfinite
+ * @param {object} props - data captured by useSearchParams()
+ * @param {object} props.search - the title of the movie requested by the user comes from the searchMovies component
+ * @param {object} props.vote_average - rating data from starRating component
+ * @param {object} props.vote_averageMin - minimum data rating from the starRating component
+ * @returns list of movies
+ */
 
 export default function Discover(props) {
 
@@ -14,6 +22,7 @@ export default function Discover(props) {
   const [ hasMore, setHasMore ] = useState(true)
   const [ isLoading, setIsLoading ] = useState(true)
   const { search, vote_average, vote_averageMin } = props
+
 
   useEffect(()=>{
     setIsLoading(true)

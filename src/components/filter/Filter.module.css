@@ -6,14 +6,37 @@
     justify-content: flex-end;
 }
 
+
 .TextRating span{
     color: rgb(105, 103, 103);
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: bold;
     padding: 5px;
-    margin-right: 10px;
+
 }
 
 .starRating{
-    margin-right: 10px; 
+    margin-right: 20px;
+}
+
+@media (max-width:900px) {
+
+    .TextRating span{
+        font-size: 1rem;
+    }
+
+    .starRating{
+        margin-right: 10px;
+
+    }
+   
+}
+
+
+@media (max-width:600px) {
+
+    .TextRating span{
+        font-size: 0.7rem;
+    }
+
 }

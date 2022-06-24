@@ -7,7 +7,7 @@ export default function Filter() {
     <div className={ styles.filter}>
         <div className={ styles.TextRating}><span> Rating </span> </div>
         <div className={ styles.starRating}><StarRating /> </div>
-        
+    
     </div>
   )
 }

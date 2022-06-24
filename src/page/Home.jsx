@@ -4,6 +4,11 @@ import Discover from '../components/discover/Discover'
 import { useSearchParams } from "react-router-dom";
 import Filter from '../components/filter/Filter';
 
+/**
+ * Captures the parameters coming in the url of the other components and renders the main page
+ * @returns render the main page of the application
+ */
+
 export default function Home() {
 
   const [query] = useSearchParams()
@@ -15,7 +20,7 @@ export default function Home() {
     <div>
         <HeaderMovies />
         <Filter />
-        <Discover key={vote_average} search={ search } vote_average ={vote_average}  vote_averageMin ={vote_averageMin}  />
+        <Discover key={vote_average || search } search={ search } vote_average ={vote_average}  vote_averageMin ={vote_averageMin}  />
     </div>
   )
 }

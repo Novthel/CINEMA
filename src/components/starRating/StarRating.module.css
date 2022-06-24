@@ -1,7 +1,6 @@
 .radio{
-    width: 150px;
+    width: 100%;
     border-radius: 5px;
-    border: 1px solid rgb(170, 168, 168);
     padding: 2px;
     background-color: rgb(253, 252, 245);
 
@@ -14,4 +13,13 @@
 .star{
     cursor: pointer;
     margin-right: 10px;
+    font-size: 1rem;
+}
+
+@media (max-width:600px) {
+
+    .star{
+        font-size: 0.7rem;
+        margin-right: 5px;
+    }
 }

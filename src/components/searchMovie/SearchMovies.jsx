@@ -3,6 +3,12 @@ import styles from './SearchMovies.module.css'
 import { ImSearch } from "react-icons/im"
 import { useSearchParams } from "react-router-dom"
 
+/**
+ * add a search input element that allows users to consult information about movies.
+   Use useSearchParams() to send the query value as a parameter in the URL
+ * @returns render an input element
+ */
+
 
 export default function SearchMovies() {
 
@@ -28,7 +34,6 @@ export default function SearchMovies() {
         value={ searchMovie } onChange ={(e)=> { setSearchMovie(e.target.value) }}/>
           <button className={ styles.searchButton } type='submit' > { <ImSearch  size={20}/>} </button>
         </div>
-
     </form>
   )
 }

@@ -14,7 +14,7 @@
 .vote_average{
     position: absolute;
     right: 0;
-    bottom: 0;
+    bottom: 3px;
     background-color: black;
     padding-left: 20px;
     border-top-left-radius: 40px;
@@ -27,3 +27,14 @@
     padding: 0 10px ;
 }
 
+@media (max-width:600px) {
+
+    .imgCard{
+        width: 85%;
+        height: auto;
+    }
+
+    .vote_average{
+        right: 25px; 
+    }
+}

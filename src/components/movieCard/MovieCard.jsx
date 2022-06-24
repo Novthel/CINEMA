@@ -4,8 +4,17 @@ import { Link } from "react-router-dom";
 import { getImageURL } from '../../utils/GetImageURL';
 import { FaStar } from 'react-icons/fa'
 
-export default function MovieCard({movie}) {
+/**
+ * Card of a movie with your data
+ * @param {object} movie -properties of a film
+ * @param {string} movie.movie.poster_path - movie image 
+ * @param {string} movie.title - Movie title
+ * @param {Number} movie.vote_average - movie rating
+ * @returns  render card with image and movie score
+ */
 
+export default function MovieCard({movie}) {
+ 
   const imagenURL = getImageURL(movie.poster_path,200);
 
   return (
