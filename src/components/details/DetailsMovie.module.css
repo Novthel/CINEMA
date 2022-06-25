@@ -1,12 +1,11 @@
 
 .movDetails{
 
-    margin: 80px;
+    margin-top: 60px;
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-wrap: wrap;
-    gap: 50px;
+    gap: 40px;
 }
 
 
@@ -19,25 +18,22 @@ h3{
 
 .imgDetails{
 
-    width: 300px;
+    width: 400px;
     height: auto;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
 .details{
     width: 350px;
-    height: auto;
+    padding: 30px;
+    font-size: 1.1rem;
 }
 
 @media screen and (max-width:600px) {
 
-    .movDetails{
-        margin-top: 100px;
-        gap: 20px;
-    }
 
     .imgDetails{
-        width: 85%;
+        width: 80%;
         height: auto;
     }
     .details{
