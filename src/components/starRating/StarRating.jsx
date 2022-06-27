@@ -22,12 +22,12 @@ export default function StarRating() {
     const vote_average = query.get('vote_average.lte')
     
     function handleClick({starValue}){
-      console.log(rating) 
       console.log(starValue)
-      if(rating === starValue){
+      if(parseInt(rating) === starValue){
         setQuery({})
+
       }else{
-        setRating(starValue)
+      
         setQuery({ 'vote_average.lte' : starValue,
                    'vote_average.gte' : starValue - 2
                 })
@@ -35,7 +35,7 @@ export default function StarRating() {
     }
 
   useEffect(()=>{
-        setRating (vote_average )
+        setRating (vote_average)
       },[vote_average]) 
 
   return (
@@ -43,12 +43,13 @@ export default function StarRating() {
         { [...Array(5)].map((star,i)=>{
             
             const starValue = (i + 1) * 2
+
             return(
                 <label key={i} >
                     <input className={ styles.inputRating } type='radio' name='rating' value={ starValue }
                         onClick={()=> handleClick( {starValue }) }/>
-                    <FaStar className={ styles.star } color={ starValue <= (hover || rating) ? 'orange' : 'grey'}
-                    onMouseEnter={()=> setHover(starValue) } onMouseLeave={()=> setHover(null) }/>
+                    <FaStar className={ styles.star } color={ starValue <= ( rating || hover ) ? 'orange' : 'grey'}
+                      onMouseEnter={()=> setHover(starValue) } onMouseLeave={()=> setHover(null) }/>
                 </label>
                 )
         })}
