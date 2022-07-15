@@ -32,7 +32,7 @@ export default function SearchMovies() {
         <div className={ styles.search}>
           <input className={ styles.searchInput} type='text' placeholder='Search for a movie... ' 
         value={ searchMovie } onChange ={(e)=> { setSearchMovie(e.target.value) }}/>
-          <button className={ styles.searchButton } type='submit' > { <ImSearch  size={20}/>} </button>
+          <button className={ styles.searchButton } type='submit' > { <ImSearch  size={15}/>} </button>
         </div>
     </form>
   )

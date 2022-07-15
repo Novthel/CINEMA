@@ -15,12 +15,12 @@ import { FaStar } from 'react-icons/fa'
 
 export default function MovieCard({movie}) {
  
-  const imagenURL = getImageURL(movie.poster_path,200);
+  const imagenURL = getImageURL(movie.poster_path,300);
 
   return (
     <li className = {styles.card}>
       <Link to={'/movie/' + movie.id}>
-          <img className ={ styles.imgCard} src={ imagenURL } alt={ movie.title } width={200} 
+          <img className ={ styles.imgCard} src={ imagenURL } alt={ movie.title } width={300} 
           height={300}/>
           <div className = {styles.vote_average}>
               <p>{ movie.vote_average } <FaStar /></p>

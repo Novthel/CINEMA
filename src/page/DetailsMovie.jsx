@@ -30,21 +30,25 @@ export default function DetailsMovie() {
   if (!movie) {
     return null
   }
+  console.log(movie)
 
-  const imagenURL = getImageURL( movie.poster_path, 500);
- 
+  const imagenURL = getImageURL( movie.poster_path, 300);
+  const tapizURL = getImageURL( movie.backdrop_path , 1280);
   return (
-    <div className={ styles.movDetails }>
-
-        <img className={ styles.imgDetails } src={ imagenURL } alt={movie.id} />
-        <div className={ styles.details }>
+    <div className={ styles.movieContainer} style={{backgroundImage: `url( ${ tapizURL })` }} >
+       <div className={ styles.movDetails }>
+          <div className={ styles.imgDetails }>
+            <img  src={ imagenURL } alt={movie.id} />
+          </div>
+          <div className={ styles.details }>
             <h3><strong> { movie.title } </strong> </h3>
             <p><strong>Description: </strong></p> 
             <p>{ movie.overview }</p>
             <p><strong>Genres:  </strong> { movie.genres.map((gen)=> gen.name).join(' , ')}</p>
             <p><strong>Score:  </strong> { movie.vote_average }</p>
-
         </div>
+      </div>
     </div>
+   
   )
 }
