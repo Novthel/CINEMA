@@ -35,7 +35,7 @@ export default function DetailsMovie() {
   const imagenURL = getImageURL( movie.poster_path, 300);
   const tapizURL = getImageURL( movie.backdrop_path , 1280);
   return (
-    <div className={ styles.movieContainer} style={{backgroundImage: `url( ${ tapizURL })` }} >
+    <div className={ styles.movieContainer} style={ {backgroundImage: `url( ${ tapizURL })`} } >
        <div className={ styles.movDetails }>
           <div className={ styles.imgDetails }>
             <img  src={ imagenURL } alt={movie.id} />

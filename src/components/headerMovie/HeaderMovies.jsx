@@ -14,8 +14,9 @@ export default function HeaderMovies() {
        <div className={ styles.title }>
           <h2>Your Favourite movies. Explained </h2>
           <h4>Figure out what happened. Then find out why.</h4>
+          <div className={ styles.searchMovies }><SearchMovies /></div>
        </div>
-       <div className={ styles.searchMovies }><SearchMovies /></div>
+      
        
     </div>
   )
