@@ -1,24 +1,19 @@
 .container{
     width: 100%;
-    height: 50vh;
+    min-height: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-}
+    background: #780206;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #061161, #780206);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #061161, #780206); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-.principalImg{
-    width: 100%;
-    height: 50vh;
-    object-fit: cover;
-    z-index: -1;
-    position: absolute;
-    filter: brightness(0.6);
 }
 
 .title{
     color: azure;
-    width: 60%;
+    max-width: 60rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -34,10 +29,13 @@
     font-size: 1.1rem;
 }
 
-@media (max-width:900px) {
+@media (max-width:992px) {
 
+    .container {
+        min-height: 60vh;
+    }
     .title{
-     width: 70%;
+     max-width: 40rem;
     }
 
     .title h2{
@@ -51,20 +49,23 @@
 }
 
 
-@media (max-width:500px) {
-
+@media (max-width:576px) {
+    .container {
+        min-height: 50vh;
+    }
     .title{
-        width: 70%;
+        max-width: 13rem;
+        margin: 1rem;
     }
 
     .title h2{
-        font-size: 2.1rem;
+        font-size: 1.6rem;
         margin-bottom: 2rem;
     }
     
     .title h4{
         font-size: 0.8rem;
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
     }
 
 }

@@ -31,7 +31,7 @@ export default function SearchMovies() {
     <form className={ styles.container } onSubmit ={ HandleClick }>
         <div className={ styles.search}>
           <input className={ styles.searchInput} type='text' placeholder='Search for a movie... ' 
-        value={ searchMovie } onChange ={(e)=> { setSearchMovie(e.target.value) }}/>
+          value={ searchMovie } onChange ={(e)=> { setSearchMovie(e.target.value) }}/>
           <button className={ styles.searchButton } type='submit' > { <ImSearch  size={15}/>} </button>
         </div>
     </form>

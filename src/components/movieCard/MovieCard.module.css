@@ -16,8 +16,9 @@
     right: 0;
     bottom: 0;
     background-color: black;
-    padding-left: 1rem;
-    border-top-left-radius: 2rem;
+    border: 2px solid rgb(173, 85, 151);
+    padding: 0 0.4rem;
+    border-radius: 50%;
     
 }
 
